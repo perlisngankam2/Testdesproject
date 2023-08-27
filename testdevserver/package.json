@@ -1,0 +1,14 @@
+{
+  "name": "testdevserver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "MDA",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "json-server": "^0.17.3"
+  },
+  "scripts": {
+    "start": "npx json-server --watch db.json --port 3020"
+  }
+}
