@@ -6,7 +6,6 @@ const axios = require('axios');
 
 
 const Details = () => {
-
     // const axiosInstance = axios.create({
     //     headers: {
     //         "Content-Type": "application/json"
@@ -36,7 +35,6 @@ const Details = () => {
  }, [])
 
   return  (
-
     <Box width={"full"} >
     {dataDetail && ( 
         <Box width={"full"}>
@@ -44,7 +42,7 @@ const Details = () => {
            zIndex={10}
         >
             <Image 
-                src={dataDetail.category.image}
+                // src={dataDetail.category.image}
                 alt="image"
                 // src=""
                 height={{base:"200px", md:"400px"}} 
@@ -66,12 +64,12 @@ const Details = () => {
                 <Text>Apercue</Text>
                 <Divider colorScheme={"black"} size={"2px"} border={"1px"}/>
                 <Heading fontSize={"30px"} mt={"20px"}>{dataDetail.name}</Heading>
+                {/* <Heading fontSize={"30px"} mt={"20px"}>{`${dataDetail.address.city.seo.en}`}</Heading> */}
             </Box>
         </Center>
         </Box>
     )}
 {/* {console.log(dataDetail.category.image)} */}
-
     </Box>
   );
 };

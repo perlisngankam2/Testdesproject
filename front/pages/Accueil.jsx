@@ -60,10 +60,11 @@ const Acceuil = () => {
             key={index}  
             w={"280px"} 
             border={"1px"}
-            borderColor={""}
+            borderColor={"blue.300"}
             gap={10} 
             flexWrap="wrap"
             rounded={"lg"}
+            bg={"pink.50"}
           > 
             <Box  w={"full"} >
                 <Center>
@@ -88,9 +89,6 @@ const Acceuil = () => {
                         color={"white"}
                         bg="red.500"
                         key={index}
-                        // rounded={"md"}
-                        // direction={"row"}
-                        // display={"flex"}
                         p={1}
                         w={"75px"}
                         fontSize={"12px"}
@@ -99,6 +97,22 @@ const Acceuil = () => {
                     </Card>
                 ))}
             </Flex>
+            {/* <Flex 
+                gap={1} 
+                flexWrap={"wrap"}
+            >
+                    <Card
+                        width={"50px"} 
+                        textAlign={"center"}
+                        color={"white"}
+                        bg="red.500"
+                        p={1}
+                        w={"75px"}
+                        fontSize={"12px"}
+                    >
+                        {item.descriptifs}
+                    </Card>
+            </Flex> */}
             <Flex 
                 direction={"column"} gap={1} 
                 mb={{base:"-25px", sm:"-25px", md:"-25px"}}
